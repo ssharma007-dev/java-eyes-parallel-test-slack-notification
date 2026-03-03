@@ -1,8 +1,5 @@
-variables:
-  APPLITOOLS_BATCH_ID: ${CI_COMMIT_SHA}
-
 visual-tests:
-  image: mcr.microsoft.com/playwright:v1.40.0-jammy
+  image: mcr.microsoft.com/playwright:v1.58.2-jammy
   script:
     - npm ci
     - npx playwright test
